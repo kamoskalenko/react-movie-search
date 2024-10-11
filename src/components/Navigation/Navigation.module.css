@@ -1,0 +1,29 @@
+.link {
+  list-style: none;
+}
+
+.active {
+  color: red;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+
+.link {
+  margin: 0 20px;
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #484848;
+}
+
+.active {
+  border-bottom: 2px solid #00ffff;
+}
