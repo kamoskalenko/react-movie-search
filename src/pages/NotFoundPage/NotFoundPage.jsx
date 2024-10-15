@@ -1,15 +1,14 @@
-// import React from 'react'
-
 import { Link } from "react-router-dom";
 import s from "./NotFoundPage.module.css";
 
 const NotFoundPage = () => {
   return (
-    <nav className={s.container}>
+    <div className={s.container}>
+      <h1 className={s.message}>Oops! Page Not Found</h1>
       <Link to="/" className={s.link}>
-        Home
+        Go to Home
       </Link>
-    </nav>
+    </div>
   );
 };
 

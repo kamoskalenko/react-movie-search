@@ -5,6 +5,8 @@
 }
 
 .castList {
+  margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;

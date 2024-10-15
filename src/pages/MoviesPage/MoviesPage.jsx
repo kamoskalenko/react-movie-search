@@ -32,7 +32,10 @@ const MoviesPage = () => {
 
   const handleChangeQuery = (newQuery) => {
     if (newQuery.trim() === "") {
-      toast.warn("Don't be shy, enter a movie title to search!");
+      toast.info(`Don't be shy, enter a movie title to search!`, {
+        position: "top-center",
+        theme: "colored",
+      });
       return;
     }
     setSearchParams({ query: newQuery });
