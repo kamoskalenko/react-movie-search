@@ -8,10 +8,8 @@ import {
 } from "react-router-dom";
 import { fetchMovieById } from "../../services/api";
 import Loader from "../../components/Loader/Loader";
+import { baseURL, defaultImg } from "../../config/constants";
 import s from "./MovieDetailsPage.module.css";
-
-const baseURL = "https://image.tmdb.org/t/p/w200";
-const defaultImg = "https://via.placeholder.com/200x300?text=No+Image";
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();

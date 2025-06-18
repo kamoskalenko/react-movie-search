@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchMovieCast } from "../../services/api";
 import Loader from "../../components/Loader/Loader";
+import { baseURL, defaultImg } from "../../config/constants";
 import s from "./MovieCast.module.css";
-
-const baseURL = "https://image.tmdb.org/t/p/w200";
-const defaultImg = "https://via.placeholder.com/200x300?text=No+Image";
 
 const MovieCast = () => {
   const { movieId } = useParams();

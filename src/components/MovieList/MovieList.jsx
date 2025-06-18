@@ -1,8 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
+import { baseURL, defaultImg } from "../../config/constants";
 import s from "./MovieList.module.css";
-
-const baseURL = "https://image.tmdb.org/t/p/w200";
-const defaultImg = "https://via.placeholder.com/200x300?text=No+Image";
 
 const MovieList = ({ movies }) => {
   const location = useLocation();
