@@ -47,7 +47,7 @@ const MovieDetailsPage = () => {
           className={s.image}
         />
       ) : (
-        <img src={defaultImg} alt={movie.title} className={s.image} />
+        <img src={defaultImg} alt="Default poster" className={s.image} />
       )}
 
       <h2 className={s.title}>{movie.title}</h2>
@@ -68,7 +68,7 @@ const MovieDetailsPage = () => {
       )}
 
       <h3 className={s.sectionTitle}>Genres</h3>
-      {movie.genres.length > 0 ? (
+      {movie.genres && movie.genres.length > 0 ? (
         <ul className={s.genres}>
           {movie.genres.map((genre) => (
             <li key={genre.id} className={s.genreItem}>

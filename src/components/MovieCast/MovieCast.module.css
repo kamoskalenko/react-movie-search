@@ -8,13 +8,14 @@
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
   gap: 10px;
 }
 
 .castItem {
   text-align: center;
   color: #00ffff;
+  max-width: 150px;
 }
 
 .castImage {
